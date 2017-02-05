@@ -3,7 +3,7 @@
  * Function to create shortcodes that renders a template part (using Twig with Timber).
  * Note: install and active the plugin Timber (https://wordpress.org/plugins/timber-library).
  *
- * @version 2.0.0
+ * @version 2.1.0
 */
 function create_template_shortcode( $name, $template_path, $defaults = array() ) {
 	add_shortcode( $name, function ( $args, $content, $shortcode_name ) use ( $template_path, $defaults ) {
@@ -14,7 +14,7 @@ function create_template_shortcode( $name, $template_path, $defaults = array() )
 		
 		$context = apply_filters( 'template_shortcode_timber_context', $context, $shortcode_name );
 		$cache = apply_filters( 'template_shortcode_timber_cache_options', array(
-			'expires' => 600,
+			'expires' => false,
 			'mode' => TimberLoader::CACHE_USE_DEFAULT
 		), $shortcode_name );
 		
