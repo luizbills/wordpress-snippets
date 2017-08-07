@@ -1,4 +1,3 @@
-
 <?php
 /** 
  * Change address format (of a specific country)
