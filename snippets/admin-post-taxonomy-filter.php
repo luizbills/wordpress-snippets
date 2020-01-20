@@ -7,7 +7,7 @@ public function _custom_add_admin_filter () {
 	if ( $post_type === $current_post_type ) {
 		$taxonomy = 'YOUR TAXONOMY SLUG';
 		$filter_args = array(
-			'show_option_all'   => \esc_html__( 'Todas Montadoras', 'wc-battery-selling-form' ),
+			'show_option_all'   => 'Select an option',
 			'orderby'           => 'NAME',
 			'order'             => 'ASC',
 			'name'              => $taxonomy,
