@@ -1,4 +1,5 @@
 <?php
+
 add_action( 'restrict_manage_posts', '_custom_add_admin_filter' );
 public function _custom_add_admin_filter () {
 	global $post_type;
