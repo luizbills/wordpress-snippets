@@ -3,7 +3,7 @@
 add_action( 'restrict_manage_posts', '_custom_add_admin_filter' );
 public function _custom_add_admin_filter () {
 	global $post_type;
-	$current_post_type 'YOUR POST TYPE SLUG';
+	$current_post_type = 'YOUR POST TYPE SLUG';
 
 	if ( $post_type === $current_post_type ) {
 		$taxonomy = 'YOUR TAXONOMY SLUG';
