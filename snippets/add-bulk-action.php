@@ -2,7 +2,7 @@
 
 add_filter( 'bulk_actions-edit-shop-order', 'register_actions' );
 function register_actions ( $actions ) {
-  $actions[ 'YOUR_ACTION_ID' ] = __( 'Gerar Etiquetas do Correios' );
+  $actions['YOUR_ACTION_ID'] = esc_html__( 'Your action name', 'domain' );
   return $actions;
 }
 
